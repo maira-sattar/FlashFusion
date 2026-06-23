@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Verfication Link</title>
+  </head>
+  <body
+    style="
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      height: 100vh;
+      background: linear-gradient(135deg, #7195d4, #146d88);
+      flex-direction: column;
+    "
+  >
+    <% if(!updateUser) { %>
+    <div style="background-color: black; color: white; padding: 10px 15px">
+      <div>
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/6204/6204317.png"
+          style="width: 150px; height: auto"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <h2>Email Verification link has been expired.</h2>
+      </div>
+      <p>Please log in or request the link again</p>
+
+      <a
+        href="/"
+        style="
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          background: linear-gradient(135deg, #7195d4, #146d88);
+          border: none;
+          color: #ffffff;
+          font-weight: bold;
+          padding: 5px 0;
+          border-radius: 4px;
+          text-decoration: none;
+        "
+      >
+        Log In
+      </a>
+    </div>
+    <% } else{ %>
+    <div style="background-color: black; color: white; padding: 10px 15px">
+      <div>
+        <img
+          src="/images/Email_Sent-removebg-preview.png"
+          style="width: 150px; height: auto"
+          alt=""
+        />
+      </div>
+
+      <div>
+        <h2>This email is verified Successfully</h2>
+      </div>
+
+      <a
+        href="/"
+        style="
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          background: linear-gradient(135deg, #7195d4, #146d88);
+          border: none;
+          color: #ffffff;
+          font-weight: bold;
+          padding: 5px 0;
+          border-radius: 4px;
+          text-decoration: none;
+        "
+      >
+        Log In
+      </a>
+    </div>
+    <% } %>
+  </body>
+</html>
