@@ -89,15 +89,10 @@ DATABASE_URL="your_database_connection_string"
 JWT_SECRET="your_jwt_secret"
 ```
 
-Add any additional environment variables required by your database provider, email service, or application configuration.
-
 **Important:** Replace the example values with your actual configuration. Never commit secrets, credentials, or your `.env` file to GitHub.
 
 ### 5. Configure Prisma
 
-Make sure your Prisma schema and database connection are configured correctly.
-
-Run database migrations if your project uses Prisma Migrate:
 
 ```bash
 npx prisma migrate dev
@@ -117,7 +112,6 @@ npm run dev
 
 ### 7. Build the Project
 
-Compile the TypeScript source files:
 
 ```bash
 npm run build
@@ -131,44 +125,5 @@ After a successful build, run:
 npm start
 ```
 
-The application will start using the compiled entry point specified in the project configuration.
-
-## 📁 Project Structure
-
-```text
-prisma-practice/
-├── src/
-│   └── index.ts
-├── prisma/
-│   └── schema.prisma
-├── build/
-├── .env
-├── .gitignore
-├── package.json
-├── package-lock.json
-└── tsconfig.json
-```
-
-*Note: The structure above is illustrative. Your actual folders and files may differ depending on your implementation.*
-
-## 🎯 Learning Objectives
-
-This project focuses on strengthening practical backend development skills, including:
-
-- Building server-side applications with Node.js and Express.js.
-- Implementing CRUD functionality and database operations.
-- Working with Prisma ORM and relational database concepts.
-- Managing authentication and password security.
-- Validating API requests and handling file uploads.
-- Configuring email functionality and environment variables.
-- Organizing TypeScript backend code.
-
-## 👩‍💻 Author
-
-**Maira Sattar**
-
-- GitHub: [@maira-sattar](https://github.com/maira-sattar)
-
----
 
 ⭐ If you find this project useful, feel free to explore the repository and its implementation.
