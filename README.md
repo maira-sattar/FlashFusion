@@ -1,4 +1,4 @@
-# Prisma Practice — Backend Application
+# Backend Application
 
 A backend application built with **Node.js, Express.js, TypeScript, and Prisma ORM** to practice backend development, database interactions, and CRUD (Create, Read, Update, Delete) operations. The project also includes tools for authentication, password hashing, data validation, email handling, and file uploads.
 
